@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Modal Example</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <button data-modal-action="open-modal" data-modal="example">
+    Открыть модальное окно
+  </button>
+
+  <div class="modal" data-modal-action="modal" data-modal="example">
+
+    <div class="modal__content">
+      <h2>Модальное окно</h2>
+      <p>Клик внутри не закрывает</p>
+
+      <button data-modal-action="close-modal" data-modal="example">
+        Закрыть
+      </button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
